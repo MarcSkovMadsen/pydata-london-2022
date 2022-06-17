@@ -2,7 +2,9 @@
 
 # 🚪 PyData London 2022
 
-This project contains notes and code inspired by [PyData London 2022](https://pydata.org/london2022/).
+This project contains notes and code examples inspired by [PyData London 2022](https://pydata.org/london2022/).
+
+[![PyDataLondon 2022](assets/pydatalondon.png)](https://pydata.org/london2022/)
 
 ## 📒 Binder
 
