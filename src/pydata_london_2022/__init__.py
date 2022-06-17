@@ -1,2 +1,2 @@
 """This package provides ..."""
-VERSION = "0.0.{{MinorVersion}}"
+VERSION = "0.0.1"
