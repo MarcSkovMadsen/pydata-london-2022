@@ -8,9 +8,9 @@ This project contains notes and code inspired by [PyData London 2022](https://py
 
 You should be able to open this repository on binder
 
-| Jupyter Notebook | Jupyter Labs |
-| - | - |
-| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marcskovmadsen/pydata-london-2022/HEAD?filepath=examples) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marcskovmadsen/pydata-london-2022/HEAD?urlpath=lab/tree/examples) |
+| Jupyter Labs |
+| - |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marcskovmadsen/pydata-london-2022/HEAD?urlpath=lab/tree/examples) |
 
 ## 📙 Usage
 
