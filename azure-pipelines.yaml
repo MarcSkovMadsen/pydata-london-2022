@@ -1,0 +1,16 @@
+trigger:
+  branches:
+    include:
+    - dev
+    - main
+  paths:
+    exclude:
+    - README.md
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: TradingAnalytics/mt-devops-azure-pipelines-templates
+
+extends:
+  template: build-test-release-deploy-python-project.yaml@templates

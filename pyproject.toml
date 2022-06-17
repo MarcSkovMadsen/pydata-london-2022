@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools",]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = "black"
+src_paths = ["src/pydata_london_2022", "tests"]
+
+[tool.pylint.main]
+py-version=3.9
+output-format = "colorized"
+max-attributes=12
+max-args=10
+
+[tool.pylint.format]
+max-module-lines = 1000
+
+[tool.mypy]
+python_version = "3.9"
+namespace_packages = true
+explicit_package_bases = true
+mypy_path = "src"
+exclude = []
+
+[[tool.mypy.overrides]]
+module = [
+    "cookiecutter.main",
+]
+ignore_missing_imports = true
+
+# https://github.com/pytest-dev/pytest/blob/main/pyproject.toml
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-s"
+testpaths = ["tests"]
+junit_family = "legacy"
+python_files = ["tests.py","test_*.py"]
+markers = [
+    "unittest", # Small, isolated test
+    "integrationtest", # A test towards some external system or service. For example a database
+    "functionaltest", # Large potentially non-isolated test requiring access to external services
+    "slow", # A slow test. Skip normally. But run this when you have the time.
+    "skip_in_azure_pipelines", # Tests that should be skipped in azure pipelines
+]
+filterwarnings=[
+    "ignore:the imp module is deprecated in favour of importlib.*:DeprecationWarning", 
+    "ignore:inspect.getargspec.*:DeprecationWarning"
+]
+
+[tool.coverage.run]
+omit=[]
+
+[html]
+directory="test_results/cov_html"
+skip_empty=true
+
+[tool.bandit]
+exclude_dirs = [".venv", "venv",]
+severity="high"
+
+[tool.bandit.assert_used]
+exclude = ["*_test.py", "test_*.py"]
