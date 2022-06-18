@@ -15,15 +15,16 @@ def out(value):
         istar_string=pn.bind(star_string, value=stars)
         return pn.Column(
             "# Panel is probably the most powerful data app framework in Python.",
-            "# Panel works with the tools you know and love including PyScript.",
+            "# Panel works with the tools you know and love.",
+            "# Panel can be deployed on your favorite server or cloud.",
             stars, istar_string,
-            "# This app is made with PyScript and Panel.",
             sizing_mode="stretch_width",
         )
     elif value == "PyScript":
         return pn.Column(
             "# PyScript is Python in the Browser.",
             "# PyScript will potentially solve some of Pythons deployment, speed and security issues.",
+            "# This app is made with PyScript and Panel.",
             sizing_mode="stretch_width"
         )
     
