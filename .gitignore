@@ -162,4 +162,3 @@ cython_debug/
 pip-wheel-metadata/
 build/
 test_results/
-script.py
