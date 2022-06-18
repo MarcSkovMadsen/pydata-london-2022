@@ -23,7 +23,7 @@ def out(value):
     elif value == "PyScript":
         return pn.Column(
             "# PyScript is Python in the Browser.",
-            "# PyScript will potentially solve some of Pythons deployment issues.",
+            "# PyScript will potentially solve some of Pythons deployment, speed and security issues.",
             sizing_mode="stretch_width"
         )
     
