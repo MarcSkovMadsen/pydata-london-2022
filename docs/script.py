@@ -11,7 +11,7 @@ def out(value):
     if value == "PyData":
         return "<img src='https://raw.githubusercontent.com/MarcSkovMadsen/pydata-london-2022/main/docs/pydata-london-2020-schedules-wordcloud.svg'/>"
     elif value == "Panel":
-        stars = pn.widgets.IntSlider(value=5, start=0, end=5)
+        stars = pn.widgets.IntSlider(value=5, start=0, end=14)
         istar_string=pn.bind(star_string, value=stars)
         return pn.Column(
             "# Panel is probably the most powerful data app framework in Python.",
