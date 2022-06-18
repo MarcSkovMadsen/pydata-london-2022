@@ -2,7 +2,7 @@ import panel as pn
 
 pn.extension(sizing_mode="stretch_width")
 
-OPTIONS = ["PyData", "PyScript", "Panel"]
+OPTIONS = ["PyData", "Panel", "PyScript"]
 
 def star_string(value):
     return "# " + "⭐"*value
