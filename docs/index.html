@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="index.css" />
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.js"></script>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+<script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/@holoviz/panel@0.13.1/dist/panel.min.js"></script>
 <body>
-
-<h1>Marc Skov Madsen www</h1>
-<p>My first paragraph.</p>
-
+    <header>
+        <img id="pydata-logo" src="pydata-logo.png"/>
+        <div id="title" >PyScript + Panel Introduction</div>
+        <img id="panel-logo" src="panel-logo.png"/>
+    </header>
+    <main>
+        <div id="main"></div></div>
+    </main>
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<py-env>
+    - panel==0.13.1
+</py-env>
+<py-script src="script.py"></py-script>
 </body>
 </html>

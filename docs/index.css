@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    background-color: #efefef;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+header {
+    width: 100%;
+    background: #0072b5;
+    color: white;
+    padding: 20px;
+    width: calc(100% - 40px);
+}
+header h1 {
+    margin: 0px;
+}
+main {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-image: url("background-min.png");
+    overflow: hidden;
+    background-position: center center!important;
+    position: relative;
+    background-size: cover;
+    opacity: 0.6;
+}
+#title {
+    display: inline;
+    font-size: 2em;
+}
+#pydata-logo {
+    float: left;
+    display: inline;
+    height: 30px;
+    margin-right: 2em;
+}
+#panel-logo {
+    float: right;
+    display: inline;
+    height: 40px;
+    margin-right: 2em;
+}
+#pyscript-logo {
+    float: right;
+    display: inline;
+    height: 40px;
+    margin-right: 0px;
+}
+#main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: white;
+    opacity: 0.9;
+    padding-left: 50px;
+    padding-right: 50px;
+}
