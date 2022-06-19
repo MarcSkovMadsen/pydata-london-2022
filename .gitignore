@@ -162,3 +162,4 @@ cython_debug/
 pip-wheel-metadata/
 build/
 test_results/
+option_chain_data.parquet
